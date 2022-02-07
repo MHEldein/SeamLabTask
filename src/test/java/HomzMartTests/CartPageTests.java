@@ -14,7 +14,7 @@ public class CartPageTests extends TestsBase {
     @Test
     public void verify_ProductPrice_Against_TotalPrice() {
         pp = homePage.chooseOutdoors();
-        cp = pp.addThirdProdcutToCart();
+        cp = pp.addProdcutToCart(3);
         assertTrue(pp.getProductPrice().contains(cp.getTotalPrice()));
     }
 }
